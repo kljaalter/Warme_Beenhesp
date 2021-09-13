@@ -93,9 +93,9 @@ filter: opacity(.6);
   margin-left: 5px;
 }
 
-#lineup {
-  margin-top: 30px;
-  height: 360px;
+#flyer {
+  margin-top: 80px;
+  width: 450px;
 }
 
 #info {
