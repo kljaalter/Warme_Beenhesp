@@ -73,7 +73,7 @@ filter: opacity(.6);
   cursor: pointer;
   margin: 0 auto;
   display: block;
-  width: 350px;
+  width: 300px;
   margin-top: 200px;
   -webkit-filter: opacity(1);
   filter: opacity(1);
@@ -95,7 +95,10 @@ filter: opacity(.6);
 
 #flyer {
   margin-top: 80px;
-  width: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
 }
 
 #info {
@@ -175,7 +178,7 @@ filter: opacity(.6);
   }
 
   #tickets {
-    width: 250px;
+    width: 220px;
   }
 
   #tickets:hover {
@@ -191,7 +194,7 @@ filter: opacity(.6);
 
   #info {
     margin: 0 auto;
-    width: 270px;
+    width: 90%;
   }
 
   .title {
@@ -206,3 +209,11 @@ filter: opacity(.6);
     text-align: center;
     font-size: 15px;
   }
+#flyer {
+  margin-bottom: 80px;
+  width: 90%;
+}
+#text {
+  font-size: 15px;
+}
+}
