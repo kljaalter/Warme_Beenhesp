@@ -1,219 +1,23 @@
-@font-face {
-  font-family: 'Book Antiqua';
-  src: url('fonts/ANTQUAB.TTF') format('truetype');
+html, body {
+  margin:0px;
+  height:100%;
 }
 
-body {
-  margin: 0;
-  font-family: 'Book Antiqua';
-  font-weight: bold;
-  background-color: white;
-}
-
-#main {
-  margin: 160px auto 0 auto;
-  width: 900px;
-  height: 100%;
-}
-
-#header {
-  top: 0;
-  position: fixed;
-  width: 900px;
-  height: 140px;
-  z-index: 10;
-  background-color: #861819;
-}
-
-#headerFull {
-  top: 0;
-  position: fixed;
-  width: 100vw;
-  height: 140px;
-  background-color: #861819;
-}
-
-#logo {
-  float: left;
-  width: 300px;
-  margin: 40px 15px 15px 0px;
-}
-
-ul {
-  margin-left: 0px;
-  margin-top: 30px;
-  float: left;
-  list-style-type: none;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 35px;
-  cursor: pointer;
-  -webkit-filter: opacity(1);
-  filter: opacity(1);
-  -webkit-transition: -webkit-filter 0.2s;
-  /* Safari */
-  transition: filter 0.2s;
-}
-
-li a:hover {
--webkit-filter: opacity(.6);
-filter: opacity(.6);
-}
-
-#tickets {
-  cursor: pointer;
-  margin: 0 auto;
-  display: block;
-  width: 300px;
-  margin-top: 200px;
-  -webkit-filter: opacity(1);
-  filter: opacity(1);
-  -webkit-transition: -webkit-filter 0.2s;
-  /* Safari */
-  transition: filter 0.2s;
-}
-
-#tickets:hover {
-  -webkit-filter: opacity(.6);
-  filter: opacity(.6);
-}
-
-.title {
-  color: #740003;
-  font-size: 35px;
-  margin-left: 5px;
-}
-
-#flyer {
-  margin-top: 80px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-}
-
-#info {
-  margin-top: 10px;
-  overflow-wrap: break-word;
-}
-
-#text {
-  color: black;
-  font-family: arial;
-  font-size: 18px;
-  margin-left: 5px;
-}
-
-#footer {
-  margin: 40px 0 0 5px;
-  color: #740003;
-  font-size: 20px;
-  padding-bottom: 15px;
-}
-
-.jump {
-  color: none;
+#Flyer {
   position: absolute;
-}
-
-#i {
-  margin-top: -210px;
-}
-
-#l {
-  margin-top: -180px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: 90%;
 }
 
 /* mobile */
-@media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
-  #main {
-    width: auto;
-    height: 100%;
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 1024px)
+{
+  #Flyer {
+  height: auto;
+  width: 95%;
   }
-
-  #header {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  #headerFull {
-    display: none;
-  }
-
-  #logo {
-    float: none;
-    display: block;
-    margin: 20px auto;
-    height: 50px;
-    width: auto;
-  }
-
-  ul {
-    width: 100%;
-    margin-left: -27px;
-    margin-top: 0px;
-    float: none;
-    list-style-type: none;
-  }
-
-  li a {
-    padding: 0px;
-    padding-right:20px;
-    font-size: 22px;
-    cursor: none;
-  }
-
-  li a:hover {
-  -webkit-filter: opacity(1);
-  filter: opacity(1);
-  }
-
-  #tickets {
-    width: 220px;
-  }
-
-  #tickets:hover {
-    -webkit-filter: opacity(1);
-    filter: opacity(1);
-  }
-
-  #lineup {
-    margin: 50px auto 0 auto;
-    width: 190px;
-    height: 1350px;
-  }
-
-  #info {
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  .title {
-    width: auto;
-   text-align: center;
-    margin: 0;
-    font-size: 30px;
-  }
-
-  #footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 15px;
-  }
-#flyer {
-  margin-bottom: 80px;
-  width: 90%;
-}
-#text {
-  font-size: 15px;
-}
 }
